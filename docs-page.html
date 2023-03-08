@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>ItsNotSoWeird</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  
+	<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+	<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+	<df-messenger intent="WELCOME"  chat-title="Hygiene Bot"  agent-id="b5f20b98-60c2-41f3-8220-3106ff1ad9fd"  language-code="en" chat-icon="assets/images/coderdocs-logo.png">
+	   <style>
+		   df-messenger {
+  --df-messenger-bot-message: #798C92;
+  --df-messenger-button-titlebar-color: #d0cbcf;
+  --df-messenger-chat-background-color: #fafafa;
+  --df-messenger-font-color: #000;
+  --df-messenger-send-icon: #203375;
+  --df-messenger-user-message: #D6B0A7;
+ }
+	   </style>
+   </df-messenger>
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+	<link rel="shortcut icon" type="image/jpg" href="assets/images/coderdocs-logo.png"/>
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/images/coderdocs-logo.png" alt="logo"><span class="logo-text">ItsNot<span class="text-alt">SoWeird</span></span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	                <div class="top-search-box d-none d-lg-flex">
+		               
+	                </div>
+	
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+						<li class="list-inline-item"><a href="https://github.com/jwalapc/itsnotsoweird"><i class="fab fa-github fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a href="#"><i class="fab fa-facebook fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+		            </ul><!--//social-list-->
+		           
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Introduction</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">ItsNotSoWeird</a></li>
+				    
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-male"></i></span>Male</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Hygiene</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Safety & Awareness</a></li>
+				   
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-female"></i></span>Female</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Vaginal Discharge and their Meanings</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Reproductive system</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">contraceptives & Awareness</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i class="fas fa-transgender"></i></span>Transgender</a></li>
+
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">What’s gender dysphoria?</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Transgender health & Awareness</a></li>
+				  
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">FAQ1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">FAQ2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">FAQ3</a></li>
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 2021-10-30</span></h1>
+					    <section class="docs-intro">
+						    <p>We as a developer team of ItsNotSoWeird (in bold), have a goal of making resources available in one place for better sex education. The website  provides people with the knowledge, skills, and motivation they need to make healthy sex and sexuality decisions.</p>
+						</section><!--//docs-intro-->
+						
+						<h2>Why sexual hygiene and awareness is important?</h2>
+						
+							<!-- ** Embed github code starts ** -->
+							<section class="docs-section" id="item-2-3">
+								
+								<p>There are two major reasons why maintaining good sexual hygiene is so important for your overall health. For starters, it lowers the risks of acquiring infections down there, which can lead to more serious problems like infertility. Second, it reduces the risk of developing a wide range of sexually transmitted infections.
+									<br>The majority of people learn about sexuality and sex at a young age. You could talk to your parents, siblings, teachers, or mentors about it. You might also find it on your own. Gender and genitalia are discussed. You learn what sex is and the dangers it poses. Pregnancy, sexually transmitted diseases (STIs), and sexual abuse are all risks.<br>It is critical to gain as much knowledge about sex as possible. You'll be better prepared to make excellent decisions if you're well-informed.</p>
+							</section>
+							<div class="simplelightbox-gallery row mb-3">
+								<div class="col-12 col-md-4 mb-3">
+									<a href="assets/images/img1.jpeg"><img class="figure-img img-fluid shadow rounded" src="assets/images/img1.jpeg" alt="" title="AWARENESS"/></a>
+								</div>
+								<div class="col-12 col-md-4 mb-3">
+									<a href="assets/images/img2.webp"><img class="figure-img img-fluid shadow rounded" src="assets/images/img2.webp" alt="" title="AWARENESS"/></a>
+								</div><!--//col-->
+								<div class="col-12 col-md-4 mb-3">
+									<a href="assets/images/img3.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/img3.png" alt="" title="AWARENESS"/></a>
+								</div><!--//col-->
+								
+							</div>
+							<!-- ** Embed github code ends ** -->
+						</div><!--//docs-code-block-->
+						
+					     <h5>Tips for a positive body image</h5>
+						 <section class="docs-section" id="item-4-1">
+							<p> If you’re unhappy with your body, whether it’s the size of your penis or the look of any other part of you, try these helpful tips for feeling better about yourself:<br>
+								• Focus on the characteristics and body parts you do like, such as broad shoulders or a nice smile.<br>
+								• Maintain a healthy weight and incorporate strength training into your exercise routine. If you look fit and healthy, you may feel better about yourself.<br>
+								• Don’t become consumed by penis size. You can be a satisfying sexual partner regardless of the size of your penis.<br>
+								• Don’t compare yourself to athletes, models, and actors. You’ll develop an unhealthy and unrealistic image of what is normal and how you should look.<br>
+								• Spend more time and energy on pursuits you find rewarding, whether it’s sports, hobbies, traveling, or other activities. Lasting self-esteem comes from nonphysical traits, such as creativity, intelligence, and your values.</p>
+						</section>
+						<div class="simplelightbox-gallery row mb-3">
+							<div class="col-12 col-md-4 mb-3">
+								<a href="assets/images/me1.webp"><img class="figure-img img-fluid shadow rounded" src="assets/images/me1.webp" alt="" title="AWARENESS"/></a>
+							</div>
+							<div class="col-12 col-md-4 mb-3">
+								<a href="assets/images/me2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/me2.png" alt="" title="AWARENESS"/></a>
+							</div><!--//col-->
+							<div class="col-12 col-md-4 mb-3">
+								<a href="assets/images/me3.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/me3.png" alt="" title="AWARENESS"/></a>
+							</div><!--//col-->
+							
+						</div>
+						
+						
+				    </header>
+				    <section class="docs-section" id="item-1-1">
+						<h2 class="section-heading">Masturbation</h2>
+						
+						<h5>Side effects of masturbation</h5>
+						<ul>
+						    <li>Masturbation doesn’t have any harmful side effects.</li>
+						    <li>However, some people may feel guilty about masturbating or have issues with chronic masturbation.</li>
+						    
+						</ul>
+						<h5>Masturbation and guilt</h5>
+						<ol>
+							<li>Some people may feel guilty about masturbating because of cultural, spiritual, or religious beliefs.</li>
+							<li>Masturbation is neither wrong nor immoral, but you may still hear messages that self-pleasure is “dirty” and “shameful.”</li>
+							
+						</ol>
+                        <h5>Addiction to masturbation</h5>
+                        <div class="callout-block callout-block-info">
+                            
+                            <div class="content">
+                                <h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+	                                Point
+	                            </h4>
+                                <p>Some people can and do develop an addiction to masturbation. You may be spending too much time masturbating if masturbation causes you to:</p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+                        
+                        <div class="callout-block callout-block-warning">
+                            <div class="content">
+                                <h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+	                                Point
+	                            </h4>
+                                <p>If you’re worried you may have an addiction to masturbation, speak with your doctor or a counselor about ways to cut down on masturbating.</p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+                        
+                        <div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+	                                Point
+	                            </h4>
+                                <p>Talk therapy can help you manage your addiction. You could also cut down by replacing masturbation with other activities.</p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+                        
+                      
+                        
+                        <h5 class="mt-5">Next time you have an urge to masturbate, try:</h5>
+                        <div class="alert alert-primary" role="alert">
+							going for a run
+						</div>
+						<div class="alert alert-secondary" role="alert">
+							writing in a journal
+						</div>
+						<div class="alert alert-success" role="alert">
+							spending time with friends
+						</div>
+						<div class="alert alert-danger" role="alert">
+							going for a walk
+						</div>
+						<div class="alert alert-warning" role="alert">
+							skip your chores or daily activities
+						</div>
+						<div class="alert alert-info" role="alert">
+							miss work or school
+						</div>
+						<div class="alert alert-light" role="alert">
+							cancel plans with friends or family
+						</div>
+						<div class="alert alert-dark" role="alert">
+							miss important social events
+						</div>
+						<h3 class="docs-heading">Debunking other masturbation myths</h3>
+					    <section class="docs-intro">
+						    <p>Perhaps the most common myth about masturbation is that it’s not normal. But up to 90 percent of men and 80 percent of women claim that they’ve masturbated at some point in their life.<br>
+								Another common myth is that masturbation can make you go blind or start growing hair on your palms. This is also false. Some evidence even shows that masturbation can have physical benefits.</p>
+						</section>
+						<div class="simplelightbox-gallery row mb-3">
+							<div class="col-12 col-md-4 mb-3">
+								<a href="assets/images/mast1.jpeg"><img class="figure-img img-fluid shadow rounded" src="assets/images/mast1.jpeg" alt="" title="AWARENESS"/></a>
+							</div>
+							<div class="col-12 col-md-4 mb-3">
+								<a href="assets/images/mast2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/mast2.png" alt="" title="AWARENESS"/></a>
+							</div><!--//col-->
+							<div class="col-12 col-md-4 mb-3">
+								<a href="assets/images/mast3.jpeg"><img class="figure-img img-fluid shadow rounded" src="assets/images/mast3.jpeg" alt="" title="AWARENESS"/></a>
+							</div><!--//col-->
+							
+						</div>
+					</section><!--//section-->
+				
+			    <article class="docs-article" id="section-2">
+				    <header class="docs-header">
+					    <h3 class="docs-heading">Male</h3>
+					    <section class="docs-intro">
+						    <p>There’s plenty of debate out there when it comes to the best regimen for keeping your sexy parts clean and healthy; but there are some basics that apply to everyone. Here are 10 rules to remember when it comes to sexual hygiene for men.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-2-1">
+						<h2 class="section-heading">Wash, Dry, and Smell Good</h2>
+						<p>Testicles are prone to smelling bad, sweating, and getting irritated. The skin around a man’s genital area is no different than the rest of his body; it can be washed at least once a day. If you sweat a lot, whether it’s from working out, hot weather, or you’re just the type, make sure to stay clean down there. If you need a bit of help on this front, our friends at Ballsy have perfected the process. Check out their ballwash and other products.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-2-2">
+						<h2 class="section-heading"> Never Anus Before Vagina</h2>
+						<p>Bacteria in the rectum can easily be transferred to the vagina during intercourse. While anal sex can stay in your sexual reportoire, remember that if anything has been inside your rectum (fingers, mouth, toy, penis), wash it with soap and water before it touches the vagina. Anal and vaginal bacteria are different, and introducing one to the other can lead to infection.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-2-3">
+						<h2 class="section-heading"> Wear Condoms</h2>
+						<p>Although not as scary as it sounds, sex usually involves some kind of skin tearing and/or bleeding. With that in mind, a condom is always strongly advised for vaginal and anal sex. If you wait to see bleeding as a red flag, be aware: many vaginal and anal tears can be microscopic, but still contribute to transmission of STDs.</p>
+					</section>
+					<section class="docs-section" id="item-2-3">
+						<h2 class="section-heading"> Erectile dysfunction</h2>
+						<p>Erectile dysfunction (impotence) is the inability to get and keep an erection firm enough for sex.Having erection trouble from time to time isn't necessarily a cause for concern. If erectile dysfunction is an ongoing issue, however, it can cause stress, affect your self-confidence and contribute to relationship problems. Problems getting or keeping an erection can also be a sign of an underlying health condition that needs treatment and a risk factor for heart disease.</p>
+					</section>
+					<div class="simplelightbox-gallery row mb-3">
+						<div class="col-12 col-md-4 mb-3">
+							<a href="assets/images/flacid.webp"><img class="figure-img img-fluid shadow rounded" src="assets/images/flacid.webp" alt="" title="FLACID"/></a>
+						</div>
+						<div class="col-12 col-md-4 mb-3">
+							<a href="assets/images/flacid1.webp"><img class="figure-img img-fluid shadow rounded" src="assets/images/flacid1.webp" alt="" title="FLACID"/></a>
+						</div><!--//col-->
+						<div class="col-12 col-md-4 mb-3">
+							<a href="assets/images/flacid2.jpg"><img class="figure-img img-fluid shadow rounded" src="assets/images/flacid2.jpg" alt="" title="FLACID"/></a>
+						</div><!--//col-->
+						
+					</div>
+					<!--/section-->
+					<section class="docs-section" id="item-2-3">
+						<h2 class="section-heading">Penis Size</h2>
+						<p>According to one study published in the British Journal of Urology International (BJUI)Trusted Source, the average length of a flaccid penis is 3.61 inches, while the average length of an erect penis is 5.16 inches.
+
+							The average girth is 3.66 inches for a flaccid penis and 4.59 inches for an erect penis. Girth is the circumference of the penis at its widest section.
+							
+							Keep reading to learn more about penis size, how much size matters for sexual satisfaction, and what you should do if you’re worried that your penis is too small..</p>
+					</section>
+					<section class="docs-section" id="item-2-3">
+						<h2 class="section-heading">Does size matter?</h2>
+						<p>Of particular concern for some men is whether their penis will be satisfying sexually for themselves and their partner. Some men may also be anxious about how they look naked.
+
+							When it comes to sexual intercourse, bigger may not always be better.
+							
+							In a study in the journal PLOS OneTrusted Source, researchers interviewed 75 sexually active women about the size of penis they would prefer for a one-night stand and for a long-term relationship.
+							
+							The women were shown 33 different-sized 3-D penis models made out of blue plastic so as not to suggest a particular race.</p>
+					</section>
+					<section class="docs-section" id="item-2-3">
+						<h2 class="section-heading">Can I increase the size of my penis?</h2>
+						<p>The decision to try to increase the size of your penis should be made carefully with the consultation of a urologist. The Journal of Urology study recommended that only men with a flaccid penis length of less than 1.6 inches or an erect penis of less than 3 inches should be considered as candidates for penile-lengthening treatment.</p>
+					</section>
+					<div class="simplelightbox-gallery row mb-3">
+						<div class="col-12 col-md-4 mb-3">
+							<a href="assets/images/flacid3.jpeg"><img class="figure-img img-fluid shadow rounded" src="assets/images/flacid3.jpeg" alt="" title="FLACID"/></a>
+						</div>
+						<div class="col-12 col-md-4 mb-3">
+							<a href="assets/images/flacid4.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/flacid4.png" alt="" title="FLACID"/></a>
+						</div><!--//col-->
+						<div class="col-12 col-md-4 mb-3">
+							<a href="assets/images/flacid5.webp"><img class="figure-img img-fluid shadow rounded" src="assets/images/flacid5.webp" alt="" title="FLACID"/></a>
+						</div><!--//col-->
+						
+					</div>
+					<section class="docs-section" id="item-2-3">
+						<h2 class="section-heading">Reference</h2>
+						<a>https://www.verywellhealth.com/external-penile-prostheses-for-erectile-dysfunction-treatment-4165459<br>https://education.eddiebygiddy.com/mens-health/sexual-hygiene-for-men-10-rules-to-live-by.</a>
+					</section>
+			    </article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="section-3">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Female</h1>
+					    <section class="docs-intro">
+						    <p>Genital organs play an important role in a woman’s overall health and hygiene plays a major role in safeguarding these body parts. The vagina is a closed muscular canal that extends from the vulva (opening of the female genital area) to the neck of the uterus (cervix) and it is also known as the birth canal, which connects the cervix via the uterus.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-3-1">
+						<h2 class="section-heading">Vaginal Discharge and their Meanings</h2>
+						<p><h3>Types of vaginal discharge</h3><br>
+							There are several different types of vaginal discharge. These types are categorized based on their color and consistency. Some types of discharge are normal. Others may indicate an underlying condition that requires treatment.
+							<br><br>
+							<b>White</b><br>
+							A bit of white discharge, especially at the beginning or end of your menstrual cycle, is normal. However, if the discharge is accompanied by itching and has a thick, cottage cheese-like consistency or appearance, it’s not normal and needs treatment. This type of discharge may be a sign of a yeast infection.<br><br>
+							
+							<b>Clear and watery<br></b>
+							A clear and watery discharge is perfectly normal. It can occur at any time of the month. It may be especially heavy after exercise. <br><br>
+							
+							<b>Clear and stretchy</b><br>
+							When discharge is clear but stretchy and mucous-like, rather than watery, it indicates that you are likely ovulating. This is a normal type of discharge. <br><br>
+							
+							<b>Brown or bloody</b><br>
+							Brown or bloody discharge is usually normal, especially when it occurs during or right after your menstrual cycle. A late discharge at the end of your period can look brown instead of red. You may also experience a small amount of bloody discharge between periods. This is called spotting. <br>
+							
+							If spotting occurs during the normal time of your period and you’ve recently had sex without protection, this could be a sign of pregnancy. Spotting during an early phase of pregnancy can be a sign of miscarriage, so it should be discussed with your OB-GYN. <br>
+							
+							In rare cases, brown or bloody discharge can be a sign of endometrial or cervical cancer. It could be other problems such as fibroids or other abnormal growths. This is why it’s important to get a yearly pelvic exam and Pap smear. Your gynecologist will check for cervical abnormalities during these procedures. <br><br>
+							
+							<b>Yellow or green</b><br>
+							A yellow or green discharge, especially when it’s thick, chunky, or accompanied by an unpleasant smell, isn’t normal. This type of discharge may be a sign of the infection trichomoniasis. It’s commonly spread through sexual intercourse.</p> <br> <br>
+							When to seek medical help
+If you have unusual discharge alongside certain other symptoms, see your doctor as soon as possible. The symptoms to watch out for include:
+<ul>
+<li> fever</li>
+<li>pain in the abdomen</li>
+<li>unexplained weight loss</li>
+<li>fatigue</li>
+<li>increased urination</li>
+</ul>
+If you have any concerns regarding whether a discharge is normal, make an appointment to see your doctor. <br>
+Home care for vaginal discharge
+To prevent infections, practice good hygiene and wear breathable cotton underwear. Don’t use douches, as they can make discharge worse by removing useful bacteria. Also, practice safe sex and use protection to avoid STIs.
+
+To decrease the likelihood of yeast infections when taking antibiotics, eat yogurt that contains live and active cultures. If you know you have a yeast infection, you can also treat it with an over-the-counter yeast infection cream or suppository.
+					</section>
+					<div class="simplelightbox-gallery row mb-3">
+						<div class="col-12 col-md-4 mb-3">
+							<a href="assets/images/pic1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/pic1.png" alt="" title="SAFE"/></a>
+						</div>
+						<div class="col-12 col-md-4 mb-3">
+							<a href="assets/images/pic2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/pic2.png" alt="" title="SAFE"/></a>
+						</div><!--//col-->
+						<div class="col-12 col-md-4 mb-3">
+							<a href="assets/images/pic3.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/pic3.png" alt="" title="SAFE"/></a>
+						</div><!--//col-->
+						
+					</div><!--//section-->
+					
+					<section class="docs-section" id="item-3-2">
+						<h2 class="section-heading">Reproductive system</h2>
+						<p>Reproductive side effects of when your body is adjusting to oral, inserted, and patch contraceptives include:<br>
+							• loss of menstruation (amenorrhea) or extra bleeding<br>
+							• some bleeding or spotting between periods<br>
+							• vaginal irritation<br>
+							• breast tenderness<br>
+							• breast enlargement<br>
+							• change in your sex drive<br>
+						Serious but uncommon side effects include heavy bleeding or bleeding that goes on for more than a week.
+						Hormonal birth controls may slightly raise the risk of cervical cancer, although researchers are unsure if this is due to the medication itself or if it’s simply due to an increased risk of HPV exposure from having sex.
+						https://www.healthline.com/health/birth-control-effects-on-body</p>
+					</section><!--//section-->
+					<div class="simplelightbox-gallery row mb-3">
+						<div class="col-12 col-md-4 mb-3">
+							<a href="assets/images/pho1.jpg"><img class="figure-img img-fluid shadow rounded" src="assets/images/pho1.jpg" alt="" title="SAFE"/></a>
+						</div>
+						<div class="col-12 col-md-4 mb-3">
+							<a href="assets/images/pho2.webp"><img class="figure-img img-fluid shadow rounded" src="assets/images/pho2.webp" alt="" title="SAFE"/></a>
+						</div><!--//col-->
+						<div class="col-12 col-md-4 mb-3">
+							<a href="assets/images/pho3.jpg"><img class="figure-img img-fluid shadow rounded" src="assets/images/pho3.jpg" alt="" title="SAFE"/></a>
+						</div><!--//col-->
+						
+					</div>
+					
+					<section class="docs-section" id="item-3-3">
+						<h2 class="section-heading">The Effects of Hormonal Birth Control on Your Body</h2>
+						Birth control pills and patches are dispensed only with a prescription. Hormone-based contraceptives are available in many forms, including:<br>
+    • pills (or oral contraceptives): The key difference between brands are the
+amounts of estrogen and progestin in them — this is why some women switch
+brands if they think they’re getting too little or too much hormones, based on
+the symptoms experienced. The pill must be taken every day to prevent pregnancy.<br>
+    • patch: The
+patch also contains estrogen and progestin, but is placed on the skin. Patches
+must be changed once a week for full effect.<br>
+    • ring: Similar
+to the patch and pill, the ring also releases estrogen and progestin into the
+body. The ring is worn inside the vagina so that the vaginal lining can absorb
+the hormones. Rings must be replaced once a month.<br>
+    • birth control shot (Depo-Provera): The shot contains only progestin, and is
+administered every 12 weeks at your doctor’s office. According to Options for Sexual Health, the effects of the birth control shot can last up to
+a year after you stop taking it.<br>
+    • intrauterine devices (IUDs): There are IUD’s both with and without hormones.
+In ones that release hormones, they can contain progesterone. IUD’s are
+inserted into your uterus by your doctor and must be changed every 3 to 10
+years, depending on the type.<br>
+    • implant: The
+implant contains progestin that releases through the thin rod into your arm.
+It’s placed under the skin on the inside of your upper arm by your doctor. It
+lasts for up to three years.<br>
+
+					</section>
+					<section class="docs-section" id="item-3-3">
+						<h2 class="section-heading">Cardiovascular and central nervous systems</h2>
+						<p>According to the Mayo Clinic, a healthy woman who doesn’t smoke is unlikely to experience serious side effects from oral contraceptives. However, for some women, birth control pills and patches can increase their blood pressure. Those extra hormones can also put you at risk for blood clots.<br>
+							• These risks are even higher if you:<br>
+							• smoke or are over age 35<br>
+							• have high blood pressure<br>
+							• have a pre-existing heart disease<br>
+							• have diabetes</p>
+					</section>
+				<!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="section-4">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Transgender</h1>
+					    <section class="docs-intro">
+						    <p>Some people believe that the sex assigned to them at birth does not correspond to their gender identity or the gender they believe they are on the inside. These folks are commonly referred to as <b>transgender </b>. <br> Transgender is a word that includes the various ways in which people's gender identities differ from the sex assigned to them at birth. There are numerous labels used by transgender persons to describe themselves. For example, transgender is sometimes abbreviated as <b>trans, trans*, or trans male/trans female </b>.  It’s always best to use the language and labels that the person prefers. <br> Gender identity is expressed in a variety of ways by transgender people. Some people dress, act, and behave in ways that correspond to the gender they identify with. Some people use hormones and may have surgery to alter their bodies to match their gender identity. Some transgender people reject the standard gender binary of "male" and "female," and instead identify as <b>transgender, genderqueer, genderfluid</b>, or something else entirely.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-4-1">
+						<h2 class="section-heading">What’s gender dysphoria?</h2>
+						<p> <img src="assets/images/gender-dysphoria.jpeg" align="right" alt="gender dysphoria">Gender dysphoria is a term used by <b>psychologists</b> and <b>doctors</b> to describe the discomfort, sadness, and worry that transgender people may experience as a result of the <b>misfit of their bodies and gender identities</b>. A person with gender dysphoria may be formally diagnosed in order to receive medical treatment to aid in their transition.
+							<br>	This was once referred to as "<b>gender identity disorder</b>" by psychologists.The word was altered to reflect the fact that a mismatch between a person's body and gender identity isn't a mental disease in and of itself (though it can cause emotional discomfort).</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-4-2">
+						<h2 class="section-heading">How is a transgender identity different from sexual orientation?</h2>
+						<p>People often confuse gender identity with <b>sexual orientation</b>. But being transgender isn’t the same thing as being lesbian, gay, or bisexual. Gender identity, whether transgender or cisgender, is about who you ARE inside as male, female, both, or none of these. Being lesbian, gay, bisexual, or straight describes who you’re attracted to and who you feel yourself drawn to <b>romantically, emotionally, and sexually</b>.
+							<br>A transgender person can be gay, lesbian, straight, or bisexual, just like someone who’s cisgender. A simple way to think about it is:<b> Sexual orientation is about who you want to be with. Gender identity is about who you are.</b> 
+							</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-4-3">
+						<h2 class="section-heading">Transgender Sexual and Reproductive Health: Unmet Needs and Barriers to Care</h2>
+						<p>Outright <b>discrimination and refusal</b> to treat transgender patients, as well as a lack of relevant clinical and cultural knowledge among physicians, are all barriers to excellent health care for transgender persons. These concerns are heightened by the intimate nature of sexual and reproductive health care, which includes <b>screening and treatment</b> for sexually transmitted diseases, breast, cervical, and prostate cancers, as well as contraception administration.<br><br> Because of their gender identities or sexual choices, or because elements of their body may not adhere to gender standards, transgender patients seeking sexual and reproductive health care may fear being treated in a <b>disrespectful</b> or <b>judgemental</b> manner. Those worries are all too frequently justified. Many healthcare practitioners believe that transgender patients do not require treatments like pelvic examinations or contraception, or that treating transgender patients is too difficult for them to handle. These interactions contribute to considerable <b>inequities</b> in transgender people's sexual and reproductive health. </p>
+					</section><!--//section-->
+					<section class="docs-section" id="item-4-3">
+						<h2 class="section-heading">Recommendations To Improve Transgender Sexual And Reproductive Health Care</h2>
+						<p><b>Observe all physician recommendations.</b> Clinical guidelines and recommendations for transgender persons from the American Congress of Obstetricians and Gynecologists (ACOG) and the World Professional Association for Transgender Health should be familiarised by sexual and reproductive health practitioners <br><br>
+							<B>Adopt nondiscrimination and respect policies.</B> Providers should also create a written nondiscrimination policy that acknowledges and respects each patient's gender identification. Some clinicians have taken the step of creating a clinic guide for transgender-inclusive care. <br><br>
+							<b>Staff members should be trained in cultural competency and nondiscrimination.</b> Clinicians and workers should be educated on transgender-friendly treatment, nondiscrimination, and inclusiveness. Staff training materials on transgender and LGBT competency have been developed by the Fenway Institute and the Joint Commission. <br><br>
+							<b>Transgender inclusivity should be incorporated into grant standards.</b> The Health Department and Human Services should amend Title X family planning grant program standards to ban discrimination based on gender identity and sexual orientation, as well as to accommodate the cultural and clinical requirements of transgender patients. <br><br>
+							<b>Discrimination should be reported.</b> Gender-based discrimination by health-care providers that accept government funds is illegal under federal law. Patients and their advocates should file discrimination complaints with the proper authorities to claim their right to get treatment free of discrimination. <br><br>
+							<b>Remove public policies that oblige trans persons to undergo sterilization operations.</b> Transgender people's reproductive rights are violated when policies require them to undergo sex reassignment surgery before altering their gender marker on government records. This often amounts to forced sterilization. Gender marker modifications should be allowed without needing proof of surgery or other intrusive medical treatments, according to federal, state, and municipal legislation. <br><br>
+						</p>
+					</section><!--//section-
+			    </article><!--//docs-article-->
+			    
+			   
+			    
+			    <article class="docs-article" id="section-9">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">FAQs</h1>
+					    <section class="docs-intro">
+						    <p>Section intro goes here. You can list all your FAQs using the format below.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-9-1">
+						<h2 class="section-heading">(FAQ Category Male)</h2>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Does a man go through menopause?</h5>
+						<p>Yes, a man goes through menopause, but to a different extent than a woman. Menopause is a term used to describe the end of a woman's fertility. It literally means the end of menstruation. Female menopause is characterized by changes in hormone production. The male testes, unlike the woman's ovaries, do not lose the ability to make hormones. A healthy male may be able to make sperm well into their 80's or longer.</p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What should I do if I have pain in the testes?</h5>
+						<p>Pain, lumps or swelling in the testes don’t always mean cancer, as guys might mistakenly assume. Regardless of the cause, however, you should have it checked out immediately.
+
+							“If a guy experiences sudden pain or swelling after participating in a weekend warrior or sports activity, he could have a testicular torsion, which is a medical emergency and should be seen at the ER immediately,” Dr. Campbell said, adding that doctors usually do an ultrasound to diagnose the issue. “Or it could be epididymitis, which is inflammation that can be treated with antibiotics and antiinflammatory medications.” </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Should I be worried if I see blood in the toilet bowl?</h5>
+						<p>If you’ve got rectal bleeding, it’s time to schedule an appointment.
+
+							“Often, it’s just a hemorrhoid, and frequently a patient will be able to tell by feeling a lump, experiencing some discomfort during bowel movements and rectal itching, but you never want to just assume that it is due to a hemorrhoid,” said Dr. Campbell. “The big concern is colorectal cancer, which is the second leading cause of cancer death in men, so it’s important not to ignore that symptom.” The same goes for bloody urine. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to keep a penis clean</h5>
+						<p> <b> 1.</b> Gently wash the penis with warm water each day when you're having a shower or bath.<br>
+						    <b> 2.</b> If you have a foreskin, pull it back gently and wash underneath. <br>
+						
+						
+						</p> 
+
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-9-2">
+						<h2 class="section-heading">(FAQ Category Female)</h2>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How often should a woman get a pelvic exam and Pap test?</h5>
+						<p>A Pap test is recommended for women age 21 and older. The American College of Obstetrics and Gynecology recommends routine screening for women ages 21 to 65 years every three years. More frequent Pap tests may be needed if an abnormal test result is found or if you are at high risk of cervical cancer.
+
+							Combining a Pap test with a human papillomavirus (HPV) test can safely extend the interval between cervical cancer screenings from three years to five years in many women between the ages of 30-65, according to the U.S. Preventive Services Task Force (USPSTF).</p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can a woman get pregnant while breastfeeding?</h5>
+						<p>Yes. Even though breastfeeding may suppress or delay menstruation, you can still get pregnant. Ovulation will occur before you start having menstrual periods again, so follow your doctor's recommendation on the appropriate birth control method to use. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What should women do when they forget their birth control pills?</h5>
+						<p>If you forget to take a birth control pill, take it as soon as you remember. If you don't remember until the next day, go ahead and take two pills that day. If you forget to take your pills for two days, take two pills the day you remember and two pills the next day. You will then be back on schedule. If you miss more than two pills, call your health care provider for instructions. Those instructions may be to take one pill daily until Sunday and then start a new pack or to discard the rest of the pill pack and start over with a new pack that same day. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can a woman get pregnant using the withdrawal method of birth control?</h5>
+						<p>ulling out before the man ejaculates, known as the withdrawal method, is not a foolproof method for birth control. Some ejaculate (fluid that contains sperm) may be released before the man actually climaxes. In addition, some men may not have the willpower or be able to withdraw in time. </p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-9-3">
+							<h2 class="section-heading">(FAQ Category TransGender)</h2>
+						    <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What are some categories or
+								types of transgender people? </h5>
+							<p>Many identities fall under the transgender
+								umbrella. The term transsexual refers to people
+								whose gender identity is different from their
+								assigned sex. Often, transsexual people alter or
+								wish to alter their bodies through hormones,
+								surgery, and other means to make their bodies
+								as congruent as possible with their gender
+								identities. This process of transition through
+								medical intervention is often referred to as sex
+								or gender reassignment, but more recently is
+								also referred to as gender affirmation. </p>
+							<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What should parents do if their 3
+								child appears to be transgender
+								or gender nonconforming? </h5>
+							<p>Parents may be concerned about a child who
+								appears to be gender-nonconforming for a variety
+								of reasons. Some children express a great deal of
+								distress about their assigned sex at birth or the
+								gender roles they are expected to follow. Some
+								children experience difficult social interactions
+								with peers and adults because of their gender
+								expression. Parents may become concerned when
+								what they believed to be a “phase” does not pass.
+								 </p>
+							<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How do transsexuals make a
+								gender transition? </h5>
+							<p>Transitioning from one gender to another is a
+								complex process and may involve transition to a
+								gender that is neither traditionally male nor female.
+								People who transition often start by expressing
+								their preferred gender in situations where they
+								feel safe. They typically work up to living full time
+								as members of their preferred gender by making
+								many changes a little at a time. While there is
+								no “right” way to transition genders, there are
+								some common social changes transgender people
+								experience 
+								 </p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <small class="copyright">All Copyright &copy; <a href="#" target="_blank">reserved 2021</a></small>
+				        <ul class="social-list list-unstyled pt-4 mb-0">
+						    <li class="list-inline-item"><a href="https://github.com/jwalapc/itsnotsoweird"><i class="fab fa-github fa-fw"></i></a></li> 
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+				        </ul><!--//social-list-->
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+
+</body>
+</html> 
+
